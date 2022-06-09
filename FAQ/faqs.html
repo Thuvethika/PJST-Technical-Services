@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>Frequently Asked Questions</title>
+        
+            <style>
+            h1{
+              color: aqua;
+            }
+            body{
+              background-image: url('bg3.jpg');
+            }
+            .accordion {
+              background-color: #eee;
+              font-weight: bold;
+              opacity: 0.7;
+              cursor: pointer;
+              padding: 18px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+              transition: 0.4s;
+            }
+            p{
+              color:rgb(8, 8, 58);
+              font-family: sans-serif;
+
+            }
+            .active, .accordion:hover {
+              background-color: #ccc; 
+            }
+            
+            .panel {
+              padding: 0 18px;
+              display: none;
+              background-color: lightblue;
+              overflow: hidden;
+            }
+            </style>
+    </head>
+    <body>
+        <center>
+            <h1>Frequently Asked Questions</h1>
+        </center>
+        <button class="accordion">Why Isn't My Computer Turning On? </button>
+        <div class="panel">
+        <p>The first thing to do is to check whether the power cord is fully plugged into the wall socket, and it's switched on. If you're using a plug strip, then ensure that it's completely plugged into the wall. Some plug strips have built-in circuit breakers. Reset it to see if that turns your computer on.</p>
+        </div>
+
+        <button class="accordion">Why Is My Monitor Blank? </button>
+        <div class="panel">
+        <p>If you've stepped away from your computer for a while and you've found your screen has turned black, it's likely just gone into sleep mode. Moving your mouse around will have it back up and running. If that's not the case, then click the power button on the monitor to see if it's turned on. You should also check the back of your computer to ensure your monitor and all cables, are properly plugged in.</p>
+        </div>
+
+        <button class="accordion">How Can I Mitigate the Risk of a Hard Drive Disk Failure?</button>
+        <div class="panel">
+        <p>Your hard drive will typically store all your files: word docs, videos, photos, if that fails and you don't have a backup, then it can cause serious issues. Hard drives have a limited lifetime, so firstly it's important that you always back up your important files. Using Microsoft One Drive, server shares (if you have one), or another cloud-based system means you'll always have your documents available, should your hard disk one day pack in. Firstly (like with most computer errors), restart your computer, but if you need more help, then feel free to give us a call.</p>
+        </div>
+
+        <button class="accordion">Why Has My Mouse/Keyboard Stopped Working?</button>
+        <div class="panel">
+        <p>If your mouse or keyboard has stopped working, and it isn't because it's frozen, you'll need to check that they're connected properly. For wired ones, check they're plugged in correctly into the computer. If your mouse or computer is wireless, make sure that the dongle is plugged in and that both accessories are switched on. You may also want to check if the batteries need replacing.</p>
+        </div>
+
+        <button class="accordion">Can I Turn My Windows Computer off Without Doing a Shut Down?</button>
+        <div class="panel">
+        <p>Technically you can just shut your computer off by pressing the power button, as opposed to using the Start à Power à Shut down option. However, you should only do this if there's an issue with your computer and it won't switch off. We would only advise this as a last resort, because it can cause issues such as data loss. Microsoft created the shut down feature to ensure that a computer goes through all the steps it needs to before turning off. That's why if you just shut it down using the power button and then restart it, it comes up with a warning saying that your computer didn't shut down properly.</p>
+        </div>
+
+        <button class="accordion">Why Am I Unable to Receive Any Email Attachments? </button>
+        <div class="panel">
+        <p>If your inbox is full, then you won't be able to receive any attachments that are sent, so the first step is to delete any emails you no longer need. If you're not receiving attachments because your inbox is full, then the sender will usually receive a notification, so they're aware you haven't received it. Alternatively, the sender may have attached a file that's too big, which is why you can't receive it. You may also be using security software such as Mimecast, which will quarantine any spam or suspicious looking emails. Take a look at your On Hold or Junk messages to see if your emails have been blocked under one of these policies.</p></div>
+
+        <button class="accordion">How Do I Fix a Paper Jam?</button>
+        <div class="panel">
+        <p> If the paper has jammed, then the first thing you need to do is turn the printer off. If you can visibly see the paper, then manually remove it – being careful you don't tear it. You should also open the printer door to see if there is any more paper that's stuck inside. Once you've removed all of it, you should be able to turn the printer back on and use it again. Following the instructions on the printer display should usually get you back up and running.</p>
+        </div>
+
+        <button class="accordion">How Do I Delete My Browser History?</button>
+        <div class="panel">
+        <p> If you're using Google Chrome, click on More and History, then click on Clear Browsing Data on the left-hand side. If you want to clear everything, then select the beginning of time. For Internet Explorer, select Tools à Safety à Delete, and then select how far back you'd like to delete your browser history. Microsoft Edge works similarly too: to view your browsing history, select Hub à History à Clear all History.</p>
+        </div>
+
+        <button class="accordion">How Can I Browse in Private or Incognito Mode? </button>
+        <div class="panel">
+        <p>You may decide to use incognito mode for various reasons: it keeps your browsing activities private from other users, will automatically delete your history, and you won't pick up any cookies either. If you're using Chrome, select the More button (3 dots in the top right hand side), and select New Incognito Window. For Internet Explorer, click on the gear icon in the top right-hand corner, then Safetyà InPrivate Browsing. Alternatively, press Ctrl+Shift+P to open a private tab, just like you would if you were using Microsoft Edge.</p>
+        </div>
+
+        <button class="accordion">How Do I Turn Presentation Mode On in Powerpoint?</button>
+        <div class="panel">
+        <p>Turning the Presentation mode on is easy: just hit F5 on your keyboard, or select Slide Show à From Beginning. To turn it off, just right click with your mouse and hit End.</p>
+        </div>
+
+        <button class="accordion">How Do I Know If My PC Is up to Date? </button>
+        <div class="panel">
+        <p>Operating systems should be set to automatically update, so this is taken care of for you. Some companies will enforce this as a policy in which case you will see a message to let you know this is managed by a system administrator. Please note that platforms including Windows XP and Vista aren't supported. If you're a client with Air-IT, we'll manage supported operating systems for you.</p>
+        </div>
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+        </script>
+    </body>
+</html>
