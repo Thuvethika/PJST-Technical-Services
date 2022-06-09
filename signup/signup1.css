@@ -1,0 +1,83 @@
+body{
+   
+    margin:0;
+    padding:0; 
+    background-size:cover;
+    font-family:sans-serif;
+}
+
+.loginbox{
+
+   width:25%;
+   height:100%;
+   background:rgba(0, 0, 0, 0.5);
+   color:#fff;
+   top:70%;
+   left:50%;
+   position:absolute;
+   transform: translate(-50%,-50%);
+   box-sizing:border-box;
+   padding:70px 30px;
+
+}
+
+.avatar{
+
+   width: 100px;
+   height:100px;
+   border-radius:50%;
+   position:absolute;
+   top:-50px;
+   left:calc(50% - 50px);
+
+}
+
+h1 {
+
+margin:0;
+padding:0 0 2;
+text-align:center;
+font-size:22px;
+}
+
+.loginbox p{
+
+   margin:0;
+   padding: 0;
+   font-weight:bold;
+}
+.loginbox input[type="text"], input[type="password"], input[type="email"], input[type="number"]
+{
+   border:none;
+   border-bottom: 1px solid #fff;
+   background: transparent;
+   outline:none;
+   height:40px;
+   color:#fff;
+   font-size:16px;
+
+
+}
+.detail {
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+.detail:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+.detail:active {
+	position:relative;
+	top:1px;
+}
