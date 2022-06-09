@@ -1,0 +1,14 @@
+button{
+   text-decoration: none;
+   transition: transform 0.5s;
+   margin: 0 auto;
+   padding: 50px;
+   text-decoration: none;  
+
+}
+button:hover{
+    transform: scale(1.1);
+}
+a{
+    text-decoration: none; 
+}
